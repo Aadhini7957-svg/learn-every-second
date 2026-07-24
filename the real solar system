@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn Every Second</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4b6d0d3a9d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+🌍 Learn Every Second
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#articles">Articles</a>
+
+<a href="#planets">Planets</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#about">About</a>
+
+</nav>
+
+<div class="search">
+
+<input type="text" placeholder="Search articles...">
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Explore the Universe</h1>
+
+<p>
+
+Discover amazing articles about space, planets, stars and science.
+
+</p>
+
+<a href="#articles">
+
+<button>
+
+Start Learning
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+<section id="articles" class="articles">
+
+<h2>Featured Articles</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>☀️ The Sun</h3>
+
+<p>
+
+The Sun is the center of our Solar System and contains over 99% of its mass.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌍 Earth</h3>
+
+<p>
+
+Earth is the only known planet that supports life.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🪐 Saturn</h3>
+
+<p>
+
+Saturn is famous for its magnificent ring system.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="planets">
+
+<h2>Planet Information</h2>
+
+<table>
+
+<tr>
+
+<th>Planet</th>
+
+<th>Distance</th>
+
+<th>Diameter</th>
+
+<th>Moons</th>
+
+</tr>
+
+<tr>
+
+<td>Mercury</td>
+
+<td>57.9 million km</td>
+
+<td>4879 km</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Venus</td>
+
+<td>108.2 million km</td>
+
+<td>12104 km</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Earth</td>
+
+<td>149.6 million km</td>
+
+<td>12756 km</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Mars</td>
+
+<td>227.9 million km</td>
+
+<td>6792 km</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>Jupiter</td>
+
+<td>778.6 million km</td>
+
+<td>142984 km</td>
+
+<td>95</td>
+
+</tr>
+
+<tr>
+
+<td>Saturn</td>
+
+<td>1433.5 million km</td>
+
+<td>120660 km</td>
+
+<td>146</td>
+
+</tr>
+
+<tr>
+
+<td>Uranus</td>
+
+<td>2872.5 million km</td>
+
+<td>51118 km</td>
+
+<td>28</td>
+
+</tr>
+
+<tr>
+
+<td>Neptune</td>
+
+<td>4495.1 million km</td>
+
+<td>49528 km</td>
+
+<td>16</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section id="gallery">
+
+<h2>Space Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06">
+
+<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564">
+
+<img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa">
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Learn Every Second
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b1220;
+    color:#ffffff;
+}
+
+/* Header */
+
+header{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#111827;
+    box-shadow:0 3px 10px rgba(0,0,0,.4);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#4fd1ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#4fd1ff;
+}
+
+.search input{
+    padding:10px 16px;
+    border:none;
+    border-radius:25px;
+    width:220px;
+    outline:none;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#4fd1ff;
+    color:#000;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    transform:translateY(-3px);
+    background:#00b7ff;
+}
+
+/* Sections */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#182335;
+    padding:30px;
+    border-radius:18px;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#4fd1ff;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+th{
+    background:#4fd1ff;
+    color:black;
+    padding:15px;
+}
+
+td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #29384d;
+}
+
+tr:nth-child(even){
+    background:#182335;
+}
+
+tr:hover{
+    background:#22324a;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.search input{
+    width:100%;
+}
+
+}
+
+// ===========================
+// Learn Every Second
+// script.js
+// ===========================
+
+// Smooth scroll for navigation links
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+
+        if (href.startsWith('#')) {
+            e.preventDefault();
+
+            const section = document.querySelector(href);
+
+            if (section) {
+                section.scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        }
+    });
+});
+
+// Search functionality
+const searchInput = document.querySelector(".search input");
+
+searchInput.addEventListener("keyup", function () {
+
+    const value = this.value.toLowerCase();
+
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(value)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+// Reveal animation
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.style.opacity="1";
+            entry.target.style.transform="translateY(0px)";
+
+        }
+
+    });
+
+});
+
+document.querySelectorAll(".card, table, .gallery img").forEach(item=>{
+
+    item.style.opacity="0";
+    item.style.transform="translateY(50px)";
+    item.style.transition="all .8s ease";
+
+    observer.observe(item);
+
+});
+
+// Welcome message
+window.onload = function(){
+
+    console.log("Welcome to Learn Every Second!");
+
+};
+
+// Current year in footer
+const footer = document.querySelector("footer p");
+
+footer.innerHTML = `© ${new Date().getFullYear()} Learn Every Second. All Rights Reserved.`;
+
+// Scroll to top button
+const topButton = document.createElement("button");
+
+topButton.innerHTML = "⬆";
+
+topButton.style.position = "fixed";
+topButton.style.bottom = "30px";
+topButton.style.right = "30px";
+topButton.style.width = "50px";
+topButton.style.height = "50px";
+topButton.style.border = "none";
+topButton.style.borderRadius = "50%";
+topButton.style.background = "#4fd1ff";
+topButton.style.color = "#000";
+topButton.style.fontSize = "20px";
+topButton.style.cursor = "pointer";
+topButton.style.display = "none";
+topButton.style.boxShadow = "0 5px 15px rgba(0,0,0,.3)";
+
+document.body.appendChild(topButton);
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY>300){
+        topButton.style.display="block";
+    }else{
+        topButton.style.display="none";
+    }
+
+});
+
+topButton.onclick=function(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+};
